@@ -12,6 +12,7 @@
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
+SLIs are the yardstick to quantify whether the goal mandated by the SLO is achieved. The SLIs for monthly uptime is measured by the number of times there was service unavailable error, number of unplanned downtimes, planned downed time for maintainence activity. The SLIs for request response time is measured by the total round trip time, latency experienced by the client.
 
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
