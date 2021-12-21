@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/sumanbgl1/proj3-frontend:v2.0
+        image: docker.io/sumanbgl1/proj3-frontend:v5.0
         ports:
         - containerPort: 8080
 ---
