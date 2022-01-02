@@ -24,7 +24,9 @@ spec:
       - name: frontend
         image: docker.io/sumanbgl1/proj3-frontend:v5.0
         ports:
-        - containerPort: 8080
+        - name: my-frontend-port
+          containerPort: 8080
+          protocol: TCP
 ---
 apiVersion: v1
 kind: Service
@@ -34,9 +36,9 @@ spec:
   selector:
     app: frontend
   ports:
-    - name: my-frontend-port
+    - name: my-frontend
       port: 8080
-      targetPort: 8080
+      targetPort: my-frontend-port
   type: LoadBalancer
 ---
 apiVersion: monitoring.coreos.com/v1
@@ -52,7 +54,7 @@ spec:
     matchLabels:
       app: frontend
   endpoints:
-  - port: my-frontend-port
+  - port: my-frontend
     path: /metrics
     interval: 15s
   namespaceSelector:
