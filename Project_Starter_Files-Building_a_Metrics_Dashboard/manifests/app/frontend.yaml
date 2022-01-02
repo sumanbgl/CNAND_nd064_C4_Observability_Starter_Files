@@ -6,7 +6,7 @@ metadata:
     "sidecar.jaegertracing.io/inject": "true"
     prometheus.io/scrape: "true"
     prometheus.io/path: /metrics
-    prometheus.io/port: my-frontend-port
+    prometheus.io/port: my-fe-port
   labels:
     app: frontend
     release: prometheus
@@ -24,7 +24,7 @@ spec:
       - name: frontend
         image: docker.io/sumanbgl1/proj3-frontend:v5.0
         ports:
-        - name: my-frontend-port
+        - name: my-fe-port
           containerPort: 8080
           protocol: TCP
 ---
@@ -38,7 +38,7 @@ spec:
   ports:
     - name: my-frontend
       port: 8080
-      targetPort: my-frontend-port
+      targetPort: my-fe-port
   type: LoadBalancer
 ---
 apiVersion: monitoring.coreos.com/v1
