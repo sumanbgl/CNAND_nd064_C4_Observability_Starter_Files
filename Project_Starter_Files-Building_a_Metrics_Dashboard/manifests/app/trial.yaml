@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: trial
-        image: docker.io/sumanbgl1/proj3-trial:v2.0
+        image: docker.io/sumanbgl1/proj3-trial:v3.0
         ports:
         - name: my-trial-port
           containerPort: 8080
