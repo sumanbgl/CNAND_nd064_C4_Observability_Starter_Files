@@ -123,12 +123,12 @@ Refer below image files in the folder answer-img
 19_fd_av_resp_200_requests_01.jpg, 19_fd_av_resp_40x_50x_requests_02.jpg, 19_fd_failed_request_count_03.jpg, 
 19_fd_total_requests_04.jpg, 19_fd_cpu_util_05.jpg, 19_fd_mem_util_06.jpg
 
-19_fd_av_resp_200_requests_01.jpg -> Shows average response time for successful requests for frontend and backend service
-19_fd_av_resp_40x_50x_requests_02.jpg -> Shows average response time for requests with status code 40x and 500 for frontend and backend service
-19_fd_failed_request_count_03.jpg -> Show total number of requests with status code 40x and 500 for frontend and backend service
-19_fd_total_requests_04.jpg -> Shows total number of requests for frontend and backend service
-19_fd_cpu_util_05.jpg -> Shows CPU utilization for the container frontend and backend
-19_fd_mem_util_06.jpg -> Shows Memory utilization for the container frontend and backend
+Backend - Average Response Time - Successful Requests -> Shows average response time for successful requests for frontend and backend service
+Backend - Average Response Time - Failed Requests -> Shows average response time for requests with status code 40x and 500 for frontend and backend service
+Failed Requests -> Show total number of requests with status code 40x and 500 for frontend and backend service
+Total Requests-> Shows total number of requests for frontend and backend service
+CPU Utilization-> Shows CPU utilization for the container frontend and backend
+Memory Utilization -> Shows Memory utilization for the container frontend and backend
 
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_av_resp_200_requests_01.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_av_resp_40x_50x_requests_02.JPG)
