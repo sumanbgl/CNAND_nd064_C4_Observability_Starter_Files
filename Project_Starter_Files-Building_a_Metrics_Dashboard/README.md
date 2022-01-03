@@ -4,18 +4,26 @@
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 Refer below image files in the folder answer-img
-01_pods_monitoring.jpg, 02_svc_monitoring.jpg, 03_pods_obs.jpg, 04_svc_obs.jpg, 05_pods_default.jpg, 06_svc_default.jpg
+01_pods_monitoring.jpg, 02_svc_monitoring.jpg, 03_pods_obs.jpg, 04_svc_obs.jpg, default_ns_pods.JPG, default_ns_svc.jpg
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/01_pods_monitoring.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/02_svc_monitoring.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/03_pods_obs.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/04_svc_obs.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/default_ns_pods.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/default_ns_svc.JPG)
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 Refer below image files in the folder answer-img
 11_grafana_home_page.jpg, 12_grafana_ds.jpg
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/11_grafana_home_page.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/12_grafana_ds.JPG)
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 Refer below image files in the folder answer-img
 13_basic_dashboard.jpg
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/13_basic_dashboard.JPG)
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
@@ -38,16 +46,24 @@ Following are the 5 metrics to measure the specified SLIs.
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
 Refer below image files in the folder answer-img
 14_backend_frontend_uptime_40x_errors.jpg, 15_backend_frontend_50x_errors.jpg
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/14_backend_frontend_uptime_40x_errors.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/15_backend_frontend_50x_errors.JPG)
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
 Refer below image files in the folder answer-img
 16_jaegar_01.jpg, 16_jaegar_02.jpg, 16_jaegar_03.jpg
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/16_jaegar_01.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/16_jaegar_02.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/16_jaegar_03.JPG)
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 Refer below image files in the folder answer-img
 17_graphana_dashboard_jaegar_01.jpg, 17_graphana_dashboard_jaegar_02.jpg, 17_graphana_dashboard_jaegar_03.jpg
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/17_graphana_dashboard_jaegar_01.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/17_graphana_dashboard_jaegar_02.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/17_graphana_dashboard_jaegar_03.JPG)
 
 ## Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can user a tracer to locate errors easily.
@@ -72,6 +88,9 @@ error message: 'NoneType' object is not subscriptable
 error stack: File /app/app.py line 90 in add_star, name = request.json['name']
 Refer below image files in the folder answer-img
 18_jaegar_error_trace_01.jpg, 18_jaegar_error_trace_02.jpg, 18_jaegar_error_trace_03.jpg
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_01.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_02.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_03.JPG)
 
 ## Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
@@ -110,4 +129,13 @@ Refer below image files in the folder answer-img
 19_fd_total_requests_04.jpg -> Shows total number of requests for frontend and backend service
 19_fd_cpu_util_05.jpg -> Shows CPU utilization for the container frontend and backend
 19_fd_mem_util_06.jpg -> Shows Memory utilization for the container frontend and backend
+
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_av_resp_200_requests_01.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_02.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_03.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_total_requests_04.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_cpu_util_05.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_mem_util_06.JPG)
+
+
 
