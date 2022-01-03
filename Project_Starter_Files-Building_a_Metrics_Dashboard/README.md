@@ -12,7 +12,7 @@ Refer below image files in the folder answer-img
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/default_ns_pods.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/default_ns_svc.JPG)
 
-## Setup the Jaeger and Prometheus source
+## Set up the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 Refer below image files in the folder answer-img
 11_grafana_home_page.jpg, 12_grafana_ds.jpg
@@ -43,7 +43,7 @@ Following are the 5 metrics to measure the specified SLIs.
  
 
 ## Create a Dashboard to measure our SLIs
-*TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
+*TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure 40x and 50x errors. Create a dashboard that show these values over a 24-hour period and take a screenshot.
 Refer below image files in the folder answer-img
 14_backend_frontend_uptime_40x_errors.jpg, 15_backend_frontend_50x_errors.jpg
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/14_backend_frontend_uptime_40x_errors.JPG)
@@ -52,10 +52,11 @@ Refer below image files in the folder answer-img
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
 Refer below image files in the folder answer-img
-16_jaegar_01.jpg, 16_jaegar_02.jpg, 16_jaegar_03.jpg
+16_jaeger_01.jpg, 16_jaeger_02.jpg, 16_jaeger_03.jpg
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/16_jaegar_01.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/16_jaegar_02.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/16_jaegar_03.JPG)
+[Python file](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/reference-app/backend/app.py)
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
@@ -107,7 +108,7 @@ Errors
 
 Saturation
  - Actual % CPU usage to understand the compute resource requirement and tune the software accordingly.
- - Actual % Memory usage to understand the compute resource requirement and tune the software accordingly.
+ - Actual % Memory usage to understand the memory resource requirement and tune the software accordingly.
 
 Traffic
  - Number of http requests during non-peak period. To understand to define the autoscaling policies based on the time.
