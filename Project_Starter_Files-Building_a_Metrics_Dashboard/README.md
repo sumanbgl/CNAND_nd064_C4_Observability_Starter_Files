@@ -5,7 +5,7 @@
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 Refer below image files in the folder answer-img
 01_pods_monitoring.jpg, 02_svc_monitoring.jpg, 03_pods_obs.jpg, 04_svc_obs.jpg, 05_pods_default.jpg, 06_svc_default.jpg
-[Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/01_pods_monitoring.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/01_pods_monitoring.JPG)
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
