@@ -131,8 +131,8 @@ Refer below image files in the folder answer-img
 19_fd_mem_util_06.jpg -> Shows Memory utilization for the container frontend and backend
 
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_av_resp_200_requests_01.JPG)
-![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_02.JPG)
-![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/18_jaegar_error_trace_03.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_av_resp_40x_50x_requests_02.JPG)
+![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_failed_request_count_03.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_total_requests_04.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_cpu_util_05.JPG)
 ![Image](https://github.com/sumanbgl/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/19_fd_mem_util_06.JPG)
