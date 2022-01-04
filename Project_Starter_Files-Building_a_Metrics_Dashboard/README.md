@@ -95,10 +95,10 @@ Refer below image files in the folder answer-img
 
 ## Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
-- Latency
-- Errors
-- Traffic
-- Saturation
+- Latency: 90% of the successful requests should complete within 5 ms and 40% of the failed requests should fail within 2 minutes.
+- Errors: Number of service unavailable and 40x errors should be less than 10% of the total requests processed.
+- Traffic: 90% of the total requests received should be during peak business hours.
+- Saturation : CPU utilization should not exceed 250m 90% of the time and memory consumed should not exceed 128Mi 90% of the time.
 
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
